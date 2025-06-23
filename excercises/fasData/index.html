@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection</title>
+</head>
+<body>
+    <header>
+          <img src="image/bg-img.jpeg" alt="data collection image" class="banner">
+    </header>
+    <nav>
+          <ul>
+             <li><a href="#">Home</a></li>
+             <li>About Us</li>
+             <li>Contact</li>
+          </ul>
+    </nav>
+    <main>
+            <h2>We are here to help</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae necessitatibus, dolorum consequuntur a cum rerum, eveniet voluptatum similique, eos ipsam illo! Id beatae corporis, voluptates expedita tenetur quibusdam explicabo accusantium recusandae, earum totam placeat illum! Odio qui error laboriosam vel ipsum? Dolorum iusto velit doloribus non officiis incidunt, ipsa architecto!</p>
+
+            <form action="">
+                 <fieldset>
+                    <legend>Your Information is Safe with Us </legend>
+                    <input type="hidden" name="areaCount" value="Area51">
+                    <div>
+                      <!-- fullname  -->
+                      <label for="full_name">Full Name:</label>
+                      <input type="text" name="full_name" id="full_name" required>
+                    </div>
+                    <div>
+                      <!-- email -->
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" id="email">
+                      <!-- contacts line 1 -->
+                      <label for="line_1">Line 1:</label>
+                      <input type="tel" name="line_1" id="line_1">
+                        <!-- contacts line 2 -->
+                      <label for="line_2">Line 2:</label>
+                      <input type="tel" name="line_2" id="line_2">
+                    </div>
+                    <div>
+                      <!-- DOB is for Date of Birth -->
+                       <label for="dob">Date of Birth</label>
+                       <input type="date" name="date of birth" id="dob">
+                       <!-- Gender male -->
+                      
+                       <h4>Gender:</h4>                  
+                      <label for="gender_male">Male </label>
+                      <input type="radio" value="male" name="gender" id="gender_male">
+                      <!-- Gender Female -->
+                          <label for="gender_female">Female</label>
+                       <input type="radio" value="female" name="gender" id="gender_female">
+                    </div>
+
+                    <div>
+                      <!-- Passport Size Photo -->
+                       <label for="photo">Upload Passport Photo</label>
+                       <input type="file" name="photo" id="photo">
+                    </div>
+
+                    <div>
+                      <!-- County of origin -->
+                       <h3>County of Origin</h3>
+                       <input  name="county_of_origin" id="counties" list="county_of_origin">
+                       <datalist id="county_of_origin">
+                        <option value="none">---</option>
+                        <option value="Grand Bassa County">Grand Bassa</option>
+                        <option value="Monsterrado County">Monsterrado</option>
+                        <option value="Sanoe County">Sanoe</option>
+                        <option value="Maryland County">Maryland</option>
+                        <option value="Lofa County">Lofa</option>
+                        <option value="Margibi County">Margibi</option>
+                        <option value="None of the above">None</option>
+                       </datalist>
+                      
+                    </div>
+                     
+
+                       <div>
+                         <!-- Number of children -->
+                          <label for="num_children">Number of Children</label>
+                          <input type="number" name="number of children" id="num_children" min="1" max="2" required >
+                       </div>
+
+                        <div>
+                          <!-- when the data was collected -->
+                           <label for="data-collected-by">Please select the date-time of your entry </label>
+                           <input type="datetime-local" name="submission date" id="data-collected-by">
+                           <!-- Process rating -->
+                            <label for="rating">Please Rate this process</label>
+                            <p>On the scale of 1 to 10 How do you rate this process?</p>
+                            1 <input type="range" name="rating" id="rating" min="1" max="10"> 10
+                        </div>
+
+                          <!-- <input type="submit" value="Submit Entry"> -->
+                             
+                          <input type="image" src="image/submit.jpeg" alt="Submit Entry" width="75px">
+
+                     <p>Wrong Entry</p>
+                     <input type="reset" value="Reset Form ">
+                 </fieldset>
+            </form>
+      </main>
+    <footer>
+            <h2>Fas Fas Data Collection &copy;</h2>
+            <p> Accountability is Success</p>
+    </footer>
+</body>
+</html>
